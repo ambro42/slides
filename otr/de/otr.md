@@ -62,129 +62,120 @@
 
 # Repudiable Authentication
 
-- You are assured the correspondent is who you think it is.
-- Can’t maintain privacy if attackers can impersonate friends
-- But we do not want digital signatures
-- Non-repudiation in digital security means that there is proof of the integrity and origin of data.
-- Use Message Authentication Codes (MACs)
+- Du kannst sicher sein, dass dein Gegenüber der ist, von dem du denkst.
+- Privatsphäre kann nicht aufrechterhalten werden, wenn sich Angreifer als Freunde ausgeben
+- Aber wir möchten keine digitalen Signaturen
+- Non-repudiation bedeutet im Sicherheitskontext, dass es einen Beweis für Integrität und Ursprung der Daten gibt.
+- Benutzt Message Authentication Codes (MACs)
 
-# Encryption
+# Verschlüsselung
 
-- No one else can read your instant messages, not even the server
+- Niemand anderes kann deine Messaging-Nachrichten lesen, noch nicht einmal der Server
 
-# Deniability
+# Abstreitbarkeit
 
-- Shared key authentication.
-- Alice and Bob have same MK.
-- MK required to compute MAC.
-- Bob cannot prove that Alice generated the MAC, he could have done it, too.
-- Anyone who can verify can also forge messages after a conversation to make them look like they came from you.
-- So messages you send do not have digital signatures that are checkable by a third party. (Doesn't work in court)
-- However, during a conversation, your correspondent is assured the messages he sees are authentic and unmodified. 
+- Authentisierung mit gemeinsamem Schlüssel
+- Alice und Bob haben den selben MK.
+- MK wird benötigt um den MAC zu generieren.
+- Bob kann nicht beweisen, dass Alice den MAC generiert hat, er hätte es ebenso sein können.
+- Jeder, der eine Nachricht verifizieren kann, kann sie auch im Anschluss an eine Kommunikation fälschen und es so aussehen lassen, als ob sie von dir kämen.
+- Also haben Nachrichten, die du gesendet hast keine digitalen Signaturen die von Dritten überprüft werden können (funktioniert nicht vor Gericht)
+- Allerdings kann dein Gesprächspartner während der Konversation sicher sein, dass die Nachrichten die er sieht authentisch und unverändert sind.
 
-# What you need
+# Was du benötigst
 
--  Windows / Linux - pidgin with OTR plug-in. Download pidgin first from pidgin.im and then the plug in from cypherpunks.ca/otr
+- Windows / Linux - pidgin mit dem OTR Plug-In. Lade zu erst pidgin auf pidgin.im herunter und dann das Plug-In von cypherpunks.ca/otr
+- Mac OS - Lade adium von adium.im herunter (du brauchst kein zusätzliches Plug-In).
 
-- Mac OS - download adium from adium.im (you don't need an additional plug in).
-
-There are also OTR enabled smartphone apps
+Es gibt auch Smartphone Apps, die OTR beherrschen:
 
 - Android (Gibberbot).
 - iOS (Chatsecure).
 
-# Then what do I do?
+# Was mache ich als nächstes?
 
-- Set up an address for people to reach you at.
+- Lege dir eine Adresse zu, damit Andere dich erreichen können.
+- Finde die Person, mit der du sprechen möchtest. Baue Kontakt auf.
+- Versteck dich unter dem Radar.
+- Überprüfe die virtuellen Fingerabdrücke manuell, damit du sicher sein kannst, dass die Person die Richtige ist und du die Verschlüsselung starten kannst.
+- Stelle sicher, dass Log-Aufzeichnung in deinem Chatprogramm ausgeschaltet ist!
+- Stelle sicher, dass die Person mit der du sprechen möchtest das selbe tut!
+- Macht ein gemeinsames Geheimnis aus, an dem ihr euch erkennen könnt.
+- Das war's! Denke daran, die Chat-Sitzung zu beenden und alle Fenster zu schließen wenn du mit dem Chat fertig bist.
 
-- Find the person you want to speak to. Make contact.
-
-- Go off the record.
-
-- Manually verify fingerprints to be sure it is who you think it is and to enable encryption.
-
-- Make sure logging is disabled in your chat client's settings!
-
-- Make sure to also ask the person you want to speak to do the same!
-
-- Discuss a shared secret to authenticate your conversation partner with.
-
-- That's it! Remember to end the chat session and close any open windows when you are done chatting.
-
-# What OTR can do and what it can't
+# Was OTR leisten kann und was nicht
 
 Pros:
 
-- Secure
-- Works on a number of devices.
-- Once you've set it up, it's pretty easy to use.
+- Sicherheit
+- Funktioniert auf vielen Geräten.
+- Wenn man es einmal eingerichtet hat, ist es ziemlich einfach zu benutzen.
 
-Cons:
+Kontras:
 
-- You both have to be online.
-- And it is both. You can only have two in a secure chat.
-- The conversation is only secure while its happening. If you keep logs, they won't be encrypted.
+- Beide Gesprächspartner müssen online sein.
+- Man kann einen sicheren Chat nur zwischen zwei Menschen einrichten.
+- Dsa Gespräch ist nur sicher während es gerade statt findet. Wenn du Logs speicherst, werden sie nicht verschlüsselt sein.
 
-# Over to you :)
+# Nun zu dir :)
 
--  Now let's install Pidgin, Adium, or Bitlbee on your PC, Mac or Linux machine.
+- Nun installieren wir Pidgin, Adium oder Bitlbee auf deiner Windows-, Mac- oder Linux-Maschine.
+- Gibberbot unter Android oder Chatsecure unter iOS.
 
-- Gibberbot on Android or Chatsecure on iOS.
+Was du tun solltest, sobald das Programm installiert ist:
 
-Things to do once program is intalled:
+- Stelle sicher, dass du weißt was ein Fingerprint ist und wo du deinen findest.
+- Stelle sicher, dass du weißt wie man den Fingerprint eines Anderen überprüfst.
+- Stelle sicher, dass du weißt wie du das Logging in deinem Chat-Programm ausstellst.
+- Teste alles, indem du mit einem neuen Freund von der CryptoParty einen sicheren Chat durchführst.
 
-- Ensure you know what a fingerprint is and how to find yours.
-- Ensure you know how to verify someone elses fingerprint.
-- Ensure you know how to turn your chat client's logging setting off.
-- Test by having an encrypted chat with a new friend at the Cryptoparty.
-
-# Howto: install pidgin and pidgin-otr on Ubuntu/Debian
+# Howto: pidgin und pidgin-otr unter Ubuntu/Debian installieren
 ![](images/pidgin.png)
 
-as root:
+Mit root-Rechten:
 
--  apt-get install pidgin pidgin-otr
+- apt-get install pidgin pidgin-otr
 
-# Howto: install Pidgin + OTR plugin on Windows
+# Howto: Pidgin + OTR Plugin unter Windows installieren
 
 ![](images/pidgin.png)
 
-- Goto http://www.pidgin.im/download/windows
-- Click the Download Pidgin for Windows link
-- Save the installation file, then navigate to it and double click it. Install it.
-- Goto http://www.cypherpunks.ca/otr
-- Click the Win32 installer for pidgin link in the OTR plugin for Pidgin section
-- Save the installer, then navigate to it and double click it. Install it.
-- After you have successfully installed Pidgin and OTR you may delete the installation programs from your computer.
-- Run Pidgin. Enable the OTR plugin: OTR: Tools -> Plugins. Check the Box "off the record messaging" to enable the plugin.
+- Gehe auf http://www.pidgin.im/download/windows
+- Klicke auf den "Download Pidgin for Windows"-Link
+- Speichere die Installationsdatei, dann öffne sie und installiere.
+- Gehe auf http://www.cypherpunks.ca/otr
+- Klicke den "Win32 installer for pidgin"-Link im "OTR plugin for Pidgin"-Bereich
+- Speichere die Installtionsdatei, dann öffne sie und installiere.
+- Nachem du pidgin und das OTR-Plugin erfolgreich installiert hast, kannst du die Installationsdateien von deinem Computer löschen.
+- Starte pidgin. Aktiviere das OTR-Plugin unter Werkzeuge -> Plugins. Setze ein Häkchen in der Box "Off-the-record Messaging" um das Plugin zu aktivieren.
 
-# Howto: install Adium on Mac
+# Howto: Adium unter Mac installieren
 ![](images/adium.jpg)
 
-- Goto http://adium.im/ and download Adium.
-- Adium comes with otr preinstalled.
-- Save the installation file, then navigate to it and install it.
-- After you have successfully installed Adium you may delete the installation files from your computer.
-- Run Adium.
+- Gehe auf http://adium.im/ und lade Adium herunter.
+- Adium hat OTR bereits vorinstalliert.
+- Speichere die Installtionsdatei, dann öffne sie und installiere.
+- Nachdem du Adium erfolgreich installiert hast, kannst du die Installationsdateien von deinem Computer löschen.
+- Starte Adium.
 
-# Getting a jabber account with jabber.ccc.de
+# Einen Jabber-Konto unter jabber.ccc.de registrieren
 
-- Run Pidgin.
-- Setup your chat account. (Accounts > Manage Account > Add)
-- Protocol: XMPP
-- Username: [whatever you like!] 
+- Starte Pidgin.
+- Richte dein Konto ein. (Konten > Hinzufügen/Ändern > Hinzufügen)
+- Protokoll: XMPP
+- Benutzername: [Was du möchtest!] 
 - Domain:   jabber.ccc.de
-- Password: [whatever you like!] 
-- Check 'create this new account on the server'
+- Passwort: [Was du möchtest!] 
+- Setze ein Häkchen bei "Als neues Konto auf dem Server anlegen"
 
-# Starting An Encrypted Chat
+# Einen verschlüsselten Chat starten
 
-- Add a Buddy
-- Start Chatting with a buddy.
-- Click on "Not Verified"
-- Use Manual Fingerprint Verification.
-- Get your buddy to send you their fingerprint or show you in person.
-- Let them do the same for you.
+- Füge einen Kontakt hinzu
+- Starte einen Chat mit diesem Kontakt.
+- Klicke auf "nicht verifiziert".
+- Wähle "Manueller Fingerprint-Vergleich".
+- Bringe deinen Freund dazu, dir den Fingerprint zuzusenden oder persönlich zu zeigen.
+- Lass sie den selben Vorgang für dich durchführen.
 
 # Links
 - http://www.pidgin.im/
@@ -193,5 +184,5 @@ as root:
 - http://www.cypherpunks.ca/otr/
 - https://en.wikipedia.org/wiki/Off-the-Record_Messaging
 
-# Questions?
+# Fragen?
 
