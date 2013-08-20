@@ -1,96 +1,96 @@
-% Cryptoparty - An Introduction
+% Cryptoparty - Eine Einführung
 % {{Speaker Name}}
 % {{Month}} {{Date}}, {{Year}}
 
 # 
 ![](images/logo.png)
 
-- Privacy is necessary for an open society in the electronic age. Privacy is not secrecy. A private matter is something one doesn't want the whole world to know, but a secret matter is something one doesn't want anybody to know.
-- Privacy is the power to selectively reveal oneself to the world ~Cypherpunk Manifesto
+- Privatsphäre ist für eine offene Gesellschaft im elektronischen Zeitalter notwendig. Es ist keine Geheimniskrämerei. Eine Privatangelegenheit ist etwas, von dem man möchte, dass es nicht die ganze Welt weiß. Hingegen ist eine geheime Angelegenheit ist etwas von dem möchte dass es niemand weiß.
+- Privatsphäre ist die Macht selektiv zu entscheiden was, man von sich preis gibt. ~Cypherpunk Manifest (freie Übersetzung)
 
-# What is 'Crypto'?
+# Was ist 'Crypto'?
 
-Cryptography is:
+Kryptologie ist:
 
-- A bunch of complicated mathematics
-- The basis for many security mechanisms
-- A core functionality of Internet
+- Ein Haufen komplizierte Mathematik
+- Die Basis für viele Sicherheitsmechanismen
+- Eine Kernfunktionalität des Internets
 
-Cryptography is not:
+Kryptologie ist nicht:
 
-- The solution to all security problems
-- Reliable unless implemented and used properly
-- Something you should try to invent yourself
+- Die Lösung für alle Sicherheitsprobleme
+- Sicher wenn es nicht richtig implementiert und benutzt wird
+- Etwas was man versuchen sollte selber zu erfinden
 
-# What is a Party?
-- A venue to have fun.
-- Nice people and friends (hint: bring your friends).
-- Music.
-- Drinks & snacks.
+# Was ist eine Party?
+- Eine Gelegenheit Spaß zu haben.
+- Nette Leute und Freunde (Hinweis: Bringt eure Freunde mit).
+- Musik.
+- Getränke & Knabberkram.
 
 # Crypto + Party = Cryptoparty
 ![](images/splash.jpg)
 
-# Why do we need cryptography?
-- To answer basic security needs
-- Confidentiality and Privacy protection
-- Anonymity
-- Authentication
-- Integrity
+# Warum brauchen wir Kryptologie?
+- Um grundlegenden Sicherheitsbedürfnissen nach zu kommen
+- Schutz von Vertraulichkeit und Privatsphäre
+- Anonymität
+- Authentizität
+- Integrität
 
-# Privacy
-- Having control over one’s personal information or actions 
-- Technical privacy invasion
-- Cookies, CCTV, Metadata, Social Networks, Search engines, ISP, fidelity programs etc.
-- Moral privacy invasion
-- "If you aren't doing anything wrong, what do you have to hide?“
-- Cryptography provides part of the answer
-- Secure communications
-- Disk encryption
+# Privatsphäre
+- Die Kontrolle über die persöhnlichen Informationen und Handlungen zu haben
+- Technisches Eindringen in Privatsphäre
+- Cookies, Überwachungskameras, Metadaten, Soziale Netzwerke, Suchmaschienen, Telekommunikationsanbieter, etc.
+- Moralisches Eindringen in die Privatsphäre
+- "Wenn du nichts falsches/verwerfliches getan hast, was hast dann zu verbergen?"
+- Kryptologie ist Teil der Antwort
+- Sichere Kommunikation
+- Festplattenverschlüsselung
 
-# Security vs Privacy
+# Sicherheit im Gegensatz zu Privatsphäre
 ![](images/house.jpg)
 
-# Anonymity
+# Anonymität
 
-- Being unidentifiable in one’s actions
-- Complete anonymity (difficult)
-- The real author is not traceable
-- Pseudonymity (not as difficult)
-- Possible to link an author under a pseudonym
-- Cryptography provides part of the answer
-- Onion routing
+- Unerkannt handeln können
+- Vollständige Anonymität (ist schwierig)
+- Der wahre Autor ist nicht verfolgbar
+- Pseudonymität (ist nicht so schwierig)
+- Es ist möglich einen Autor mit einem Pseudonym zu verknüpfen
+- Kryptologie liefert einen Teil der Antwort
+- TOR
 - Bitcoins
 
-# Authentication
-- Continuity of relationship, knowing who to trust and who not to trust.
-- Where is the authentication across digital network?
-- Cryptography provides part of the answer
-- Public-key cryptography
+# Authentifizierung
+- Kontinuität einer Beziehung, wissen wem man vertrauen kann und wem nicht.
+- Wo ist die Authentifizierung über ein digitales Netzwerk?
+- Kryptologie liefert einen Teil der Antwort
+- Kryptologie mit öffentlichen Schlüssel
 - SSH, TLS
-- Trust Agility
-- Doesn’t scale really well
+- Dynamisches Vertrauen schenken und zurückziehen
+- Skaliert nicht gut
 
-# Integrity
-- Integrity has to do with the validity of the data
-- Desktop publishing is cheap and easy
-- It is simple to modify and falsify data
-- How do we verify the integrity of what we see online?
-- Cryptography can provide an answer
-- Hash functions
+# Integrität
+- Integrität hat mit der Echtheit von Daten zu tun
+- Veröffentlichen vom Schreibtisch aus ist günstig und einfach
+- Es ist einfach Daten zu modifizieren oder zu fälschen
+- Wie verifizieren wir die Integrität von dem, was wir online sehen?
+- Kryptologie kann eine Antwort liefern
+- Hash Funktionen
 
-# Why Cryptoparty?
-- There is real need of awareness about:
-- Cryptography
-- Security tools
-- Privacy protection
-- Hands-on workshops
-- Emails, Web traffic, IM, Disk Encryption, Anonymity tools, NAME it Do it.
-- Legal awareness
-- Evolutions of privacy laws in different countries
-- Lightning talks
-- Share your knowledge 
+# Warum eine Cryptoparty?
+- Es ist dringend nötig Bewustsein zu schaffen für:
+- Kryptologie
+- Sicherheitswerkzeuge
+- Schutz der Privatsphäre
+- Workshops zum mitmachen
+- Emails, Internet Verkehr, Chat, Festplattenverschlüsselung, Anonymitätswerkzeuge, NENN es MACH es.
+- Bewusstsein für die rechtliche Seite
+- Evolution von Privatsphären Gesetzen in verschiedenen Ländern
+- Kurzvortäge
+- Teilt euer Wissen
 
-# What Next?
+# Was kommt als nächstes?
 
 

@@ -6,8 +6,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Style-Type" content="text/css" />
   <meta name="generator" content="pandoc" />
-  <meta name="author" content="{{Speaker Name}}" />
-  <title>Cryptoparty - Private Conversations Online using OTR</title>
+  <meta name="author" content="{{Name des Vortragenden}}" />
+  <title>Cryptoparty - Private Online-Gespräche mit OTR</title>
+  <style type="text/css">code{white-space: pre;}</style>
   <link rel="stylesheet" type="text/css" media="screen, projection, print"
     href="http://www.w3.org/Talks/Tools/Slidy2/styles/slidy.css" />
   <script src="http://www.w3.org/Talks/Tools/Slidy2/scripts/slidy.js.gz"
@@ -15,226 +16,226 @@
 </head>
 <body>
 <div class="slide titlepage">
-  <h1 class="title">Cryptoparty - Private Conversations Online using OTR</h1>
+  <h1 class="title">Cryptoparty - Private Online-Gespräche mit OTR</h1>
   <p class="author">
-{{Speaker Name}}
+{{Name des Vortragenden}}
   </p>
-  <p class="date">{{Month}} {{Date}}, {{Year}}</p>
+  <p class="date">{{Monat}} {{Tag}}, {{Jahr}}</p>
 </div>
-<div class="section slide level1" id="cryptoparty">
+<div id="cryptoparty" class="slide section level1">
 <h1>Cryptoparty</h1>
 <div class="figure">
-<img src="images/logo.png" /><p class="caption"></p>
+<img src="images/logo.png" />
 </div>
 </div>
-<div class="section slide level1" id="alice-and-bob">
-<h1>Alice and Bob</h1>
+<div id="alice-und-bob" class="slide section level1">
+<h1>Alice und Bob</h1>
 <ul>
-<li>Alice and Bob both know how to use PGP.</li>
-<li>They both know each other’s public keys.</li>
-<li>They don’t want to hide the fact that they talked, just what they talked about.</li>
-<li>Alice uses her public key to sign a message</li>
-<li>Bob should know who he’s talking to</li>
-<li>She then uses Bob’s public key to encrypt it</li>
-<li>No one other than Bob can read the message</li>
-<li>Bob decrypts it and verifies the signature <img src="images/threat1.png" /></li>
+<li>Alice und Bob wissen beide, wie man PGP benutzt.</li>
+<li>Beide kennen den öffentlichen Schlüssel des jeweils anderen.</li>
+<li>Sie möchten nicht die Tatsache verschleiern, dass sie miteinander gesprochen haben, sondern nur worüber sie gesprochen haben.</li>
+<li>Alice benutzt ihren öffentlichen Schlssel, um eine Nachricht zu signieren.</li>
+<li>Bob sollte wissen, mit wen er redet.</li>
+<li>Sie benutzt nun Bobs öffentlichen Schlüssel, um die Nachricht zu verschlüsseln.</li>
+<li>Niemand anderes als Bob kann die Nachricht lesen.</li>
+<li>Bob entschlüsselt sie und verifiziert die Signatur. <img src="images/threat1.png" /></li>
 </ul>
 </div>
-<div class="section slide level1" id="plot-twist">
-<h1>Plot Twist</h1>
+<div id="überraschende-wendung" class="slide section level1">
+<h1>Überraschende Wendung</h1>
 <ul>
-<li>Bob’s computer is subpoenaed by the FBI</li>
-<li>Or just broken into by a Virus, trojan or some spyware.</li>
-<li>Bob's key's and emails are recovered.</li>
-<li>Decrypt past messages</li>
-<li>Learn their content</li>
-<li>Learn that Alice sent them</li>
-<li>And have a mathematical proof they can show to anyone else. <img src="images/threat2.png" /></li>
+<li>Bobs Computer wurde vom FBI kompromittiert.</li>
+<li>Oder er ist nur mit einen Virus, einen Trojaner oder irgendwelcher Spyware infiziert.</li>
+<li>Bobs Schlüssel und Emails wurden abgegriffen.</li>
+<li>Entschlüsseln der alten Nachrichten</li>
+<li>Ihren Inhalt in Erfahrung bringen</li>
+<li>Herauslesen, dass sie von Alice gesendet wurden</li>
+<li>Und einen mathematischen Beweis haben, den man jedem anderen zeigen kann. <img src="images/threat2.png" /></li>
 </ul>
 </div>
-<div class="section slide level1" id="what-went-wrong">
-<h1>What went wrong?</h1>
+<div id="was-lief-falsch" class="slide section level1">
+<h1>Was lief falsch?</h1>
 <ul>
-<li>The software created lots of incriminating records</li>
-<li>Key material that decrypts data sent over the public Internet</li>
-<li>Signatures with proofs of who said what</li>
-<li>Alice better watch what she says</li>
-<li>Her privacy depends on Bob’s actions</li>
+<li>Das Programm erzeugte lauter belastende Hinweise</li>
+<li>Schlüsselmaterial das andere Daten entschlüsseln kann wurde über das öffentliche Internet gesendet</li>
+<li>Signaturen als Beweise, wer was gesagt hat</li>
+<li>Alice sollte besser aufpassen, was sie sagt</li>
+<li>Ihre Privatsphäre hängt an Bobs Taten</li>
 </ul>
 </div>
-<div class="section slide level1" id="casual-conversations-and-otr">
-<h1>Casual Conversations and OTR</h1>
+<div id="smalltalk-und-otr" class="slide section level1">
+<h1>Smalltalk und OTR</h1>
 <ul>
-<li>Alice and Bob talk in a room</li>
-<li>No one else can hear</li>
-<li>Unless being recorded</li>
-<li>No one else knows what they say</li>
-<li>Unless Alice or Bob tell them</li>
-<li>No one can prove what was said</li>
-<li>Not even Alice or Bob</li>
-<li>These conversations are “off-the-record”</li>
-<li>There is Legal support for having casual conversations.</li>
-<li>Illegal to record conversations without notification</li>
-<li>We can have them over the phone</li>
-<li>Illegal to tap phone lines</li>
+<li>Alice und Bob reden in einem Raum</li>
+<li>Niemand sonst kann zuhören</li>
+<li>Außer das Gespräch wird aufgezeichnet</li>
+<li>Niemand sonst weiß, über was sie reden</li>
+<li>Außer Alice oder Bob erzählen es weiter</li>
+<li>Niemand kann beweisen, was gesagt wurde</li>
+<li>Noch nicht einmal Alice oder Bob</li>
+<li>Diese Konversationen verlaufen &quot;unter dem Radar&quot;, englisch “off-the-record”</li>
+<li>Es gibt Gesetze, die diese Art von Gesprächen schützen</li>
+<li>Es ist illegal, Gespräche ohne Einwilligung aufzuzeichnen</li>
+<li>Sie könnten sich auch am Telefon unterhalten</li>
+<li>Es ist illegal, Telefonleitungen anzuzapfen</li>
 </ul>
 </div>
-<div class="section slide level1" id="perfect-forward-secrecy">
+<div id="perfect-forward-secrecy" class="slide section level1">
 <h1>Perfect Forward Secrecy</h1>
 <ul>
-<li>Future key compromises should not reveal past communication.</li>
-<li>Like when Bob's laptop was stolen.</li>
-<li>Use a short-lived encryption key</li>
-<li>Discard it after use</li>
-<li>Securely erase from memory</li>
-<li>Use long-term keys to help distribute &amp; authenticate the short-lived key</li>
+<li>Kompromittierung von Schlüsseln sollte frühere Kommunikation nicht offen legen.</li>
+<li>Z.B. wenn Bobs Laptop geklaut wurde</li>
+<li>Benutze einen kurzlebigen Schlüssel zum verschlüsseln</li>
+<li>Wirf ihn nach der Benutzung weg</li>
+<li>Lösche ihn nachhaltig aus dem Speicher</li>
+<li>Benutze langlebige Schlüssel, mit deren Hilfe die kurzlebigen Schlüssel verteilt und authentisiert werden</li>
 </ul>
 </div>
-<div class="section slide level1" id="repudiable-authentication">
+<div id="repudiable-authentication" class="slide section level1">
 <h1>Repudiable Authentication</h1>
 <ul>
-<li>You are assured the correspondent is who you think it is.</li>
-<li>Can’t maintain privacy if attackers can impersonate friends</li>
-<li>But we do not want digital signatures</li>
-<li>Non-repudiation in digital security means that there is proof of the integrity and origin of data.</li>
-<li>Use Message Authentication Codes (MACs)</li>
+<li>Du kannst sicher sein, dass dein Gegenüber der ist, von dem du denkst.</li>
+<li>Privatsphäre kann nicht aufrechterhalten werden, wenn sich Angreifer als Freunde ausgeben</li>
+<li>Aber wir möchten keine digitalen Signaturen</li>
+<li>Non-repudiation bedeutet im Sicherheitskontext, dass es einen Beweis für Integrität und Ursprung der Daten gibt.</li>
+<li>Benutzt Message Authentication Codes (MACs)</li>
 </ul>
 </div>
-<div class="section slide level1" id="encryption">
-<h1>Encryption</h1>
+<div id="verschlüsselung" class="slide section level1">
+<h1>Verschlüsselung</h1>
 <ul>
-<li>No one else can read your instant messages, not even the server</li>
+<li>Niemand anderes kann deine Messaging-Nachrichten lesen, noch nicht einmal der Server</li>
 </ul>
 </div>
-<div class="section slide level1" id="deniability">
-<h1>Deniability</h1>
+<div id="abstreitbarkeit" class="slide section level1">
+<h1>Abstreitbarkeit</h1>
 <ul>
-<li>Shared key authentication.</li>
-<li>Alice and Bob have same MK.</li>
-<li>MK required to compute MAC.</li>
-<li>Bob cannot prove that Alice generated the MAC, he could have done it, too.</li>
-<li>Anyone who can verify can also forge messages after a conversation to make them look like they came from you.</li>
-<li>So messages you send do not have digital signatures that are checkable by a third party. (Doesn't work in court)</li>
-<li>However, during a conversation, your correspondent is assured the messages he sees are authentic and unmodified.</li>
+<li>Authentisierung mit gemeinsamem Schlüssel</li>
+<li>Alice und Bob haben den selben MK.</li>
+<li>MK wird benötigt um den MAC zu generieren.</li>
+<li>Bob kann nicht beweisen, dass Alice den MAC generiert hat, er hätte es ebenso sein können.</li>
+<li>Jeder, der eine Nachricht verifizieren kann, kann sie auch im Anschluss an eine Kommunikation fälschen und es so aussehen lassen, als ob sie von dir kämen.</li>
+<li>Also haben Nachrichten, die du gesendet hast keine digitalen Signaturen die von Dritten überprüft werden können (funktioniert nicht vor Gericht)</li>
+<li>Allerdings kann dein Gesprächspartner während der Konversation sicher sein, dass die Nachrichten die er sieht authentisch und unverändert sind.</li>
 </ul>
 </div>
-<div class="section slide level1" id="what-you-need">
-<h1>What you need</h1>
+<div id="was-du-benötigst" class="slide section level1">
+<h1>Was du benötigst</h1>
 <ul>
-<li><p>Windows / Linux - pidgin with OTR plug-in. Download pidgin first from pidgin.im and then the plug in from cypherpunks.ca/otr</p></li>
-<li><p>Mac OS - download adium from adium.im (you don't need an additional plug in).</p></li>
+<li>Windows / Linux - pidgin mit dem OTR Plug-In. Lade zu erst pidgin auf pidgin.im herunter und dann das Plug-In von cypherpunks.ca/otr</li>
+<li>Mac OS - Lade adium von adium.im herunter (du brauchst kein zusätzliches Plug-In).</li>
 </ul>
-<p>There are also OTR enabled smartphone apps</p>
+<p>Es gibt auch Smartphone Apps, die OTR beherrschen:</p>
 <ul>
 <li>Android (Gibberbot).</li>
 <li>iOS (Chatsecure).</li>
 </ul>
 </div>
-<div class="section slide level1" id="then-what-do-i-do">
-<h1>Then what do I do?</h1>
+<div id="was-mache-ich-als-nächstes" class="slide section level1">
+<h1>Was mache ich als nächstes?</h1>
 <ul>
-<li><p>Set up an address for people to reach you at.</p></li>
-<li><p>Find the person you want to speak to. Make contact.</p></li>
-<li><p>Go off the record.</p></li>
-<li><p>Manually verify fingerprints to be sure it is who you think it is and to enable encryption.</p></li>
-<li><p>Make sure logging is disabled in your chat client's settings!</p></li>
-<li><p>Make sure to also ask the person you want to speak to do the same!</p></li>
-<li><p>Discuss a shared secret to authenticate your conversation partner with.</p></li>
-<li><p>That's it! Remember to end the chat session and close any open windows when you are done chatting.</p></li>
+<li>Lege dir eine Adresse zu, damit Andere dich erreichen können.</li>
+<li>Finde die Person, mit der du sprechen möchtest. Baue Kontakt auf.</li>
+<li>Versteck dich unter dem Radar.</li>
+<li>Überprüfe die virtuellen Fingerabdrücke manuell, damit du sicher sein kannst, dass die Person die Richtige ist und du die Verschlüsselung starten kannst.</li>
+<li>Stelle sicher, dass Log-Aufzeichnung in deinem Chatprogramm ausgeschaltet ist!</li>
+<li>Stelle sicher, dass die Person mit der du sprechen möchtest das selbe tut!</li>
+<li>Macht ein gemeinsames Geheimnis aus, an dem ihr euch erkennen könnt.</li>
+<li>Das war's! Denke daran, die Chat-Sitzung zu beenden und alle Fenster zu schließen wenn du mit dem Chat fertig bist.</li>
 </ul>
 </div>
-<div class="section slide level1" id="what-otr-can-do-and-what-it-cant">
-<h1>What OTR can do and what it can't</h1>
+<div id="was-otr-leisten-kann-und-was-nicht" class="slide section level1">
+<h1>Was OTR leisten kann und was nicht</h1>
 <p>Pros:</p>
 <ul>
-<li>Secure</li>
-<li>Works on a number of devices.</li>
-<li>Once you've set it up, it's pretty easy to use.</li>
+<li>Sicherheit</li>
+<li>Funktioniert auf vielen Geräten.</li>
+<li>Wenn man es einmal eingerichtet hat, ist es ziemlich einfach zu benutzen.</li>
 </ul>
-<p>Cons:</p>
+<p>Kontras:</p>
 <ul>
-<li>You both have to be online.</li>
-<li>And it is both. You can only have two in a secure chat.</li>
-<li>The conversation is only secure while its happening. If you keep logs, they won't be encrypted.</li>
+<li>Beide Gesprächspartner müssen online sein.</li>
+<li>Man kann einen sicheren Chat nur zwischen zwei Menschen einrichten.</li>
+<li>Dsa Gespräch ist nur sicher während es gerade statt findet. Wenn du Logs speicherst, werden sie nicht verschlüsselt sein.</li>
 </ul>
 </div>
-<div class="section slide level1" id="over-to-you">
-<h1>Over to you :)</h1>
+<div id="nun-zu-dir" class="slide section level1">
+<h1>Nun zu dir :)</h1>
 <ul>
-<li><p>Now let's install Pidgin, Adium, or Bitlbee on your PC, Mac or Linux machine.</p></li>
-<li><p>Gibberbot on Android or Chatsecure on iOS.</p></li>
+<li>Nun installieren wir Pidgin, Adium oder Bitlbee auf deiner Windows-, Mac- oder Linux-Maschine.</li>
+<li>Gibberbot unter Android oder Chatsecure unter iOS.</li>
 </ul>
-<p>Things to do once program is intalled:</p>
+<p>Was du tun solltest, sobald das Programm installiert ist:</p>
 <ul>
-<li>Ensure you know what a fingerprint is and how to find yours.</li>
-<li>Ensure you know how to verify someone elses fingerprint.</li>
-<li>Ensure you know how to turn your chat client's logging setting off.</li>
-<li>Test by having an encrypted chat with a new friend at the Cryptoparty.</li>
+<li>Stelle sicher, dass du weißt was ein Fingerprint ist und wo du deinen findest.</li>
+<li>Stelle sicher, dass du weißt wie man den Fingerprint eines Anderen überprüfst.</li>
+<li>Stelle sicher, dass du weißt wie du das Logging in deinem Chat-Programm ausstellst.</li>
+<li>Teste alles, indem du mit einem neuen Freund von der CryptoParty einen sicheren Chat durchführst.</li>
 </ul>
 </div>
-<div class="section slide level1" id="howto-install-pidgin-and-pidgin-otr-on-ubuntudebian">
-<h1>Howto: install pidgin and pidgin-otr on Ubuntu/Debian</h1>
+<div id="howto-pidgin-und-pidgin-otr-unter-ubuntudebian-installieren" class="slide section level1">
+<h1>Howto: pidgin und pidgin-otr unter Ubuntu/Debian installieren</h1>
 <div class="figure">
-<img src="images/pidgin.png" /><p class="caption"></p>
+<img src="images/pidgin.png" />
 </div>
-<p>as root:</p>
+<p>Mit root-Rechten:</p>
 <ul>
 <li>apt-get install pidgin pidgin-otr</li>
 </ul>
 </div>
-<div class="section slide level1" id="howto-install-pidgin-otr-plugin-on-windows">
-<h1>Howto: install Pidgin + OTR plugin on Windows</h1>
+<div id="howto-pidgin-otr-plugin-unter-windows-installieren" class="slide section level1">
+<h1>Howto: Pidgin + OTR Plugin unter Windows installieren</h1>
 <div class="figure">
-<img src="images/pidgin.png" /><p class="caption"></p>
+<img src="images/pidgin.png" />
 </div>
 <ul>
-<li>Goto http://www.pidgin.im/download/windows</li>
-<li>Click the Download Pidgin for Windows link</li>
-<li>Save the installation file, then navigate to it and double click it. Install it.</li>
-<li>Goto http://www.cypherpunks.ca/otr</li>
-<li>Click the Win32 installer for pidgin link in the OTR plugin for Pidgin section</li>
-<li>Save the installer, then navigate to it and double click it. Install it.</li>
-<li>After you have successfully installed Pidgin and OTR you may delete the installation programs from your computer.</li>
-<li>Run Pidgin. Enable the OTR plugin: OTR: Tools -&gt; Plugins. Check the Box &quot;off the record messaging&quot; to enable the plugin.</li>
+<li>Gehe auf http://www.pidgin.im/download/windows</li>
+<li>Klicke auf den &quot;Download Pidgin for Windows&quot;-Link</li>
+<li>Speichere die Installationsdatei, dann öffne sie und installiere.</li>
+<li>Gehe auf http://www.cypherpunks.ca/otr</li>
+<li>Klicke den &quot;Win32 installer for pidgin&quot;-Link im &quot;OTR plugin for Pidgin&quot;-Bereich</li>
+<li>Speichere die Installtionsdatei, dann öffne sie und installiere.</li>
+<li>Nachem du pidgin und das OTR-Plugin erfolgreich installiert hast, kannst du die Installationsdateien von deinem Computer löschen.</li>
+<li>Starte pidgin. Aktiviere das OTR-Plugin unter Werkzeuge -&gt; Plugins. Setze ein Häkchen in der Box &quot;Off-the-record Messaging&quot; um das Plugin zu aktivieren.</li>
 </ul>
 </div>
-<div class="section slide level1" id="howto-install-adium-on-mac">
-<h1>Howto: install Adium on Mac</h1>
+<div id="howto-adium-unter-mac-installieren" class="slide section level1">
+<h1>Howto: Adium unter Mac installieren</h1>
 <div class="figure">
-<img src="images/adium.jpg" /><p class="caption"></p>
+<img src="images/adium.jpg" />
 </div>
 <ul>
-<li>Goto http://adium.im/ and download Adium.</li>
-<li>Adium comes with otr preinstalled.</li>
-<li>Save the installation file, then navigate to it and install it.</li>
-<li>After you have successfully installed Adium you may delete the installation files from your computer.</li>
-<li>Run Adium.</li>
+<li>Gehe auf http://adium.im/ und lade Adium herunter.</li>
+<li>Adium hat OTR bereits vorinstalliert.</li>
+<li>Speichere die Installtionsdatei, dann öffne sie und installiere.</li>
+<li>Nachdem du Adium erfolgreich installiert hast, kannst du die Installationsdateien von deinem Computer löschen.</li>
+<li>Starte Adium.</li>
 </ul>
 </div>
-<div class="section slide level1" id="getting-a-jabber-account-with-jabber.ccc.de">
-<h1>Getting a jabber account with jabber.ccc.de</h1>
+<div id="einen-jabber-konto-unter-jabber.ccc.de-registrieren" class="slide section level1">
+<h1>Einen Jabber-Konto unter jabber.ccc.de registrieren</h1>
 <ul>
-<li>Run Pidgin.</li>
-<li>Setup your chat account. (Accounts &gt; Manage Account &gt; Add)</li>
-<li>Protocol: XMPP</li>
-<li>Username: [whatever you like!]</li>
+<li>Starte Pidgin.</li>
+<li>Richte dein Konto ein. (Konten &gt; Hinzufügen/Ändern &gt; Hinzufügen)</li>
+<li>Protokoll: XMPP</li>
+<li>Benutzername: [Was du möchtest!]</li>
 <li>Domain: jabber.ccc.de</li>
-<li>Password: [whatever you like!]</li>
-<li>Check 'create this new account on the server'</li>
+<li>Passwort: [Was du möchtest!]</li>
+<li>Setze ein Häkchen bei &quot;Als neues Konto auf dem Server anlegen&quot;</li>
 </ul>
 </div>
-<div class="section slide level1" id="starting-an-encrypted-chat">
-<h1>Starting An Encrypted Chat</h1>
+<div id="einen-verschlüsselten-chat-starten" class="slide section level1">
+<h1>Einen verschlüsselten Chat starten</h1>
 <ul>
-<li>Add a Buddy</li>
-<li>Start Chatting with a buddy.</li>
-<li>Click on &quot;Not Verified&quot;</li>
-<li>Use Manual Fingerprint Verification.</li>
-<li>Get your buddy to send you their fingerprint or show you in person.</li>
-<li>Let them do the same for you.</li>
+<li>Füge einen Kontakt hinzu</li>
+<li>Starte einen Chat mit diesem Kontakt.</li>
+<li>Klicke auf &quot;nicht verifiziert&quot;.</li>
+<li>Wähle &quot;Manueller Fingerprint-Vergleich&quot;.</li>
+<li>Bringe deinen Freund dazu, dir den Fingerprint zuzusenden oder persönlich zu zeigen.</li>
+<li>Lass sie den selben Vorgang für dich durchführen.</li>
 </ul>
 </div>
-<div class="section slide level1" id="links">
+<div id="links" class="slide section level1">
 <h1>Links</h1>
 <ul>
 <li>http://www.pidgin.im/</li>
@@ -244,8 +245,8 @@
 <li>https://en.wikipedia.org/wiki/Off-the-Record_Messaging</li>
 </ul>
 </div>
-<div class="section slide level1" id="questions">
-<h1>Questions?</h1>
+<div id="fragen" class="slide section level1">
+<h1>Fragen?</h1>
 </div>
 </body>
 </html>
